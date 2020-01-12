@@ -12,8 +12,275 @@
 
 <body class="no-js">
 
-    <!-- <svg width="21" height="21">
-      <use xlink:href="img/sprite.svg#logo-in"></use>
+  <header class="page-header">
+    <button type="button">Переключить меню</button>
+
+    <h1 class="page-header__header">Новости культуры</h1>
+
+    <nav class="main-navigation">
+      <ul class="main-navigation__list">
+        <li class="main-navigation__item">
+          <a href="#" class="main-navigation__link">НОВОСТИ</a>
+        </li>
+        <li class="main-navigation__item">
+          <a href="#" class="main-navigation__link">ОБЗОРЫ</a>
+        </li>
+        <li class="main-navigation__item">
+          <a href="#" class="main-navigation__link">МУЗЫКА</a>
+        </li>
+        <li class="main-navigation__item">
+          <a href="#" class="main-navigation__link">АРХИТЕКТУРА</a>
+        </li>
+        <li class="main-navigation__item">
+          <a href="#" class="main-navigation__link">КИНО</a>
+        </li>
+        <li class="main-navigation__item">
+          <a href="#" class="main-navigation__link">ТЕАТР</a>
+        </li>
+        <li class="main-navigation__item">
+          <a href="#" class="main-navigation__link">ЛИТЕРАТУРА</a>
+        </li>
+        <li class="main-navigation__item">
+          <a href="#" class="main-navigation__link">РЕЛИГИЯ</a>
+        </li>
+        <li class="main-navigation__item">
+          <a href="#" class="main-navigation__link">ЖИВОПИСЬ</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="new-features">
+      <h2 class="visually-hidden">Наши достопримечательности</h2>
+
+      <div class="new-features__slider swiper-container">
+        <ul class="new-features__list swiper-wrapper">
+          <li class="new-features__item swiper-slide">
+            <!-- width = 320px, height = 372px -->
+            <img src="img/main.jpg" srcset="img/main.jpg 1x, img/main@2x.jpg 2x" width="320" height="372" alt="Изображение">
+            <div>
+              <h3>Подводный отель</h3>
+              <p>Как известно, Дубай – город контрастов. Самые революционные и фантастические мечты архитекторов способен воплотить в жизнь этот мегаполис, построенный на нефти и за счет нефти</p>
+            </div>
+          </li>
+          <li class="new-features__item swiper-slide">
+            <!-- width = 320px, height = 372px -->
+            <img src="img/main.jpg" srcset="img/main.jpg 1x, img/main@2x.jpg 2x" width="320" height="372" alt="Изображение">
+            <div>
+              <h3>Подводный мотель</h3>
+              <p>Как известно, Дубай – город контрастов. Самые революционные и фантастические мечты архитекторов способен воплотить в жизнь этот мегаполис, построенный на нефти и за счет нефти</p>
+            </div>
+          </li>
+          <li class="new-features__item swiper-slide">
+            <!-- width = 320px, height = 372px -->
+            <img src="img/main.jpg" srcset="img/main.jpg 1x, img/main@2x.jpg 2x" width="320" height="372" alt="Изображение">
+            <div>
+              <h3>Подводный хотель</h3>
+              <p>Как известно, Дубай – город контрастов. Самые революционные и фантастические мечты архитекторов способен воплотить в жизнь этот мегаполис, построенный на нефти и за счет нефти</p>
+            </div>
+          </li>
+          <li class="new-features__item swiper-slide">
+            <!-- width = 320px, height = 372px -->
+            <img src="img/main.jpg" srcset="img/main.jpg 1x, img/main@2x.jpg 2x" width="320" height="372" alt="Изображение">
+            <div>
+              <h3>Подводный постель</h3>
+              <p>Как известно, Дубай – город контрастов. Самые революционные и фантастические мечты архитекторов способен воплотить в жизнь этот мегаполис, построенный на нефти и за счет нефти</p>
+            </div>
+          </li>
+          <li class="new-features__item swiper-slide">
+            <!-- width = 320px, height = 372px -->
+            <img src="img/main.jpg" srcset="img/main.jpg 1x, img/main@2x.jpg 2x" width="320" height="372" alt="Изображение">
+            <div>
+              <h3>Подводный метель</h3>
+              <p>Как известно, Дубай – город контрастов. Самые революционные и фантастические мечты архитекторов способен воплотить в жизнь этот мегаполис, построенный на нефти и за счет нефти</p>
+            </div>
+          </li>
+        </ul>
+
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-white"></div>
+        <!-- Add Arrows -->
+        <button type="button" class="swiper-button-next swiper-button-white"></button>
+        <button type="button" class="swiper-button-prev swiper-button-white"></button>
+      </div>
+    </section>
+
+    <div class="page-main__container">
+      <div class="page-main__main-column">
+
+        <section class="news">
+          <h2 class="news__header">НОВОСТИ</h2>
+
+          <div class="news__news-block">
+            <div class="news__major-news">
+              <a class="news__link" href="#" aria-label="Новости">
+                <div class="news__img-wrapper">
+                  <img src="img/news-1.jpg" srcset="img/news-1.jpg 1x, img/news-1@2x.jpg 2x" width="288" height="334" alt="Изображение">
+                </div>
+                <div class="news__description">
+                  <h3>Новости культуры России и всего мира</h3>
+                  <p>В минувшие выходные в Москве на фестивале «Оберег» вручили первую премию Russian World Music Awards</p>
+                </div>
+              </a>
+            </div>
+
+            <ul class="news__list">
+              <li class="news__item">
+                <a class="news__link" href="#" aria-label="Новости">
+                  <div class="news__img-wrapper">
+                    <img src="img/news-2.jpg" srcset="img/news-2.jpg 1x, img/news-2@2x.jpg 2x" width="127" height="91" alt="Изображение">
+                  </div>
+                  <div class="news__description">
+                    <h3>Открытие нового памятника Евгению Леонову</h3>
+                    <p>10 сентября в 15:00 был открыт памятник писателю</p>
+                  </div>
+                </a>
+              </li>
+              <li class="news__item">
+                <a class="news__link" href="#" aria-label="Новости">
+                  <div class="news__img-wrapper">
+                    <img src="img/news-3.jpg" srcset="img/news-3.jpg 1x, img/news-3@2x.jpg 2x" width="127" height="91" alt="Изображение">
+                  </div>
+                  <div class="news__description">
+                    <h3>Беседы с писателями</h3>
+                    <p>Русские писатели беседуют о важности искусства</p>
+                  </div>
+                </a>
+              </li>
+              <li class="news__item">
+                <a class="news__link" href="#" aria-label="Новости">
+                  <div class="news__img-wrapper">
+                    <img src="img/news-4.jpg" srcset="img/news-4.jpg 1x, img/news-4@2x.jpg 2x" width="127" height="91" alt="Изображение">
+                  </div>
+                  <div class="news__description">
+                    <h3>День и ночь св. Патрика: встреча старых друзей</h3>
+                    <p>Не Джойсом единым живет Ирландия!</p>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="review">
+          <h2>ОБЗОРЫ</h2>
+
+          <ul class="review__list">
+            <li class="review__item">
+              <a href="#" class="review__link" aria-label="Обзор">
+                <img src="img/review-1.jpg" srcset="img/review-1.jpg 1x, img/review-1@2x.jpg 2x" width="288" height="203" alt="Изображение">
+                <h3>«Шальные годы» Монпарнаса</h3>
+                <p>В Музее изобразительных искусств имени Пушкина с 29 сентября по 29 ноября проходит выставка «Шальные годы Монпарнаса»</p>
+              </a>
+            </li>
+            <li class="review__item">
+              <a href="#" class="review__link" aria-label="Обзор">
+                <img src="img/review-2.jpg" srcset="img/review-2.jpg 1x, img/review-2@2x.jpg 2x" width="288" height="203" alt="Изображение">
+                <h3>Анатомия за 30 секунд</h3>
+                <p>Сейчас, когда мир открыт нараспашку для человека и его познавательных изысканий, интерес к научно-популярной литературе заметно вырос</p>
+              </a>
+            </li>
+            <li class="review__item">
+              <a href="#" class="review__link" aria-label="Обзор">
+                <img src="img/review-3.jpg" srcset="img/review-3.jpg 1x, img/review-3@2x.jpg 2x" width="288" height="203" alt="Изображение">
+                <h3>Русские балетные сезоны </h3>
+                <p>В Новом Иерусалиме стартовал необычный культурно-развлекательный спектакль, который покажут в новом театре</p>
+              </a>
+            </li>
+            <li class="review__item">
+              <a href="#" class="review__link" aria-label="Обзор">
+                <img src="img/review-4.jpg" srcset="img/review-4.jpg 1x, img/review-4@2x.jpg 2x" width="288" height="203" alt="Изображение">
+                <h3>Сферические чудаки</h3>
+                <p>Корреспондентам «Культурного обозревателя» посчастливилось побывать в театре «Сфера» на премьере спектакля «Чудаки и зануды» </p>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="banner">
+          <h2 class="visually-hidden">Баннер</h2>
+
+          <div class="banner__content">
+            <div class="banner__img-wrapper">
+              <img src="img/banner.jpg" srcset="img/banner.jpg 1x, img/banner@2x.jpg 2x" width="320" height="176" alt="Балет">
+            </div>
+            <h3>Ох, уж этот балет</h3>
+            <a href="#">Смотреть</a>
+          </div>
+        </section>
+
+        <section class="favorites">
+          <h2 class="visually-hidden">Избранное</h2>
+
+          <div class="favorites__slider swiper-container">
+            <ul class="favorites__list swiper-wrapper">
+              <li class="favorites__item swiper-slide">
+                <h3>КАК все успевать</h3>
+                <a href="#">Смотреть</a>
+              </li>
+              <li class="favorites__item swiper-slide">
+                <h3>Великолепное путешествие</h3>
+                <a href="#">Смотреть</a>
+              </li>
+              <li class="favorites__item swiper-slide">
+                <h3>Что это?</h3>
+                <a href="#">Смотреть</a>
+              </li>
+              <li class="favorites__item swiper-slide">
+                <h3>Опасное искусство</h3>
+                <a href="#">Смотреть</a>
+              </li>
+              <li class="favorites__item swiper-slide">
+                <h3>Что это?</h3>
+                <a href="#">Смотреть</a>
+              </li>
+            </ul>
+
+            <!-- Add Pagination -->
+            <div class="swiper-pagination swiper-pagination-white"></div>
+            <!-- Add Arrows -->
+            <button type="button" class="swiper-button-next swiper-button-white"></button>
+            <button type="button" class="swiper-button-prev swiper-button-white"></button>
+          </div>
+        </section>
+      </div>
+
+      <div class="page-main__side-column">
+        <section class="interesting">
+          <h2 class="visually-hidden">Вам понравится</h2>
+
+          <ul class="interesting__list">
+            <li class="interesting__item">
+              <div class="interesting__img-wrapper">
+                <img src="img/aside-1.jpg" srcset="img/aside-1.jpg 1x, img/aside-1@2x.jpg 2x" width="288" height="310" alt="Изображение">
+              </div>
+              <h3>ВОЗДУШНЫЕ ШАРЫ</h3>
+              <a href="#">Смотреть</a>
+            </li>
+            <li class="interesting__item">
+              <div class="interesting__img-wrapper">
+                <img src="img/aside-2.jpg" srcset="img/aside-2.jpg 1x, img/aside-2@2x.jpg 2x" width="288" height="310" alt="Изображение">
+              </div>
+              <h3>НЕОБЫЧНАЯ ФОТОСЕССИЯ</h3>
+              <a href="#">Смотреть</a>
+            </li>
+            <li class="interesting__item">
+              <div class="interesting__img-wrapper">
+                <img src="img/aside-3.jpg" srcset="img/aside-3.jpg 1x, img/aside-3@2x.jpg 2x" width="288" height="310" alt="Изображение">
+              </div>
+              <h3>Выставка птиц</h3>
+              <a href="#">Смотреть</a>
+            </li>
+          </ul>
+        </section>
+      </div>
+    </div>
+
+  </main>
+
+    <!-- <svg width="21" height="21">[href="#", ]
+      <use xlink:href="img/sprite.svg#logo-in"></use>[]
     </svg>
 
     <picture>
@@ -21,7 +288,7 @@
       <img src="img/main-news-item-1.jpg" srcset="img/main-news-item-1@2x.jpg 2x" alt="Фото в новости" width=440 height=320>
     </picture> -->
 
-<script src="js/plugins/script.min.js"></script>
-<script src="js/script.min.js"></script>
+  <script src="js/plugins/script.min.js"></script>
+  <script src="js/script.min.js"></script>
 </body>
 </html>
