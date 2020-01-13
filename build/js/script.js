@@ -179,12 +179,11 @@
     }
   }
 
-  function resetActiveElement (activeElement) {
+  // Удаляет ссылку на активный элемент и его классы.
+  function resetActiveElement(activeElement) {
     activeElement.classList.remove('main-navigation__submenu-button--open');
     activeElement.parentElement.classList.remove('main-navigation__item--open');
 
     activeElement = null;
   }
-
-
 })();

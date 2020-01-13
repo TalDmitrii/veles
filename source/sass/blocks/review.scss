@@ -15,6 +15,16 @@
 
 .review__list {
   @include indents-zero();
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.review__item {
+  width: 100%;
+
+  margin-bottom: 30px;
 }
 
 .review__link {
@@ -31,8 +41,9 @@
   margin-bottom: 15px;
 }
 
-.review__item {
-  margin-bottom: 30px;
+.review__img-wrapper img {
+  object-fit: cover;
+  width: 100%;
 }
 
 .review__item h3 {
@@ -55,4 +66,8 @@
   color: $color-black;
 
   margin: 0;
+
+  @media (min-width: 600px) {
+    max-width: 550px;
+  }
 }

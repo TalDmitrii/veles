@@ -54,11 +54,20 @@
 .favorites__img-wrapper {
   display: flex;
   position: absolute;
-  width: 100%;
-  min-height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  // width: 100%;
+  // min-height: 100%;
   z-index: 1;
 
   background-color: $color-black-70;
+}
+
+.favorites__img-wrapper img {
+  object-fit: cover;
+  width: 100%;
 }
 
 .favorites__content {

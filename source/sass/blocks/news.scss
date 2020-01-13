@@ -38,6 +38,7 @@
 
 .news__item img {
   object-fit: cover;
+  width: 100%;
 }
 
 .news__item h3 {
@@ -56,7 +57,7 @@
 .news__item p {
   font-style: normal;
   font-weight: normal;
-  font-size: 10px;
+  font-size: 12px;
   line-height: 15px;
   color: #000000;
 
@@ -89,6 +90,7 @@
 
 .news__major-news img {
   object-fit: cover;
+  width: 100%;
 }
 
 .news__major-news .news__description {
@@ -120,5 +122,9 @@
   color: $color-black;
 
   margin: 0;
+
+  @media (min-width: 620px) {
+    max-width: 520px;
+  }
 }
 
