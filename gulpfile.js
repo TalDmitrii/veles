@@ -35,7 +35,8 @@ gulp.task('style', () => gulp.src('source/sass/style.scss')
   .pipe(minify())
   .pipe(rename('style.min.css'))
   .pipe(sourcemaps.write('./'))
-  .pipe(gulp.dest('build/css'))
+  // .pipe(gulp.dest('build/css'))
+  .pipe(gulp.dest('source/css'))
   .pipe(server.stream())
 );
 
@@ -47,7 +48,8 @@ gulp.task('js', () => gulp.src(['source/js/*.js', '!source/js/plugins/*.js'])
   .pipe(uglify())
   .pipe(rename({suffix: '.min'}))
   // .pipe(sourcemaps.write())
-  .pipe(gulp.dest('build/js/'))
+  // .pipe(gulp.dest('build/js/'))
+  .pipe(gulp.dest('source/js/'))
 );
 
 gulp.task('jsPlugins', () => gulp.src(['source/js/plugins/*.js'])
@@ -58,7 +60,8 @@ gulp.task('jsPlugins', () => gulp.src(['source/js/plugins/*.js'])
   .pipe(uglify())
   .pipe(rename({suffix: '.min'}))
   // .pipe(sourcemaps.write())
-  .pipe(gulp.dest('build/js/plugins/'))
+  // .pipe(gulp.dest('build/js/plugins/'))
+  .pipe(gulp.dest('source/js/plugins/'))
 );
 
 gulp.task('images', () => gulp.src('source/img/**/*.{gif,png,jpg,svg}')
@@ -80,7 +83,8 @@ gulp.task('sprite', () => gulp.src('source/img/sprite/*.svg')
     inlineSvg: true
   }))
   .pipe(rename('sprite.svg'))
-  .pipe(gulp.dest('build/img'))
+  // .pipe(gulp.dest('build/img'))
+  .pipe(gulp.dest('source/img'))
 );
 
 gulp.task('copy', () => gulp.src([
