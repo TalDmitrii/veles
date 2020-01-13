@@ -1,0 +1,58 @@
+.review {
+  margin-bottom: 50px;
+  padding: 0 16px;
+}
+
+.review__header {
+  font-size: 17px;
+  line-height: 20px;
+  letter-spacing: 2px;
+  font-weight: 700;
+
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.review__list {
+  @include indents-zero();
+}
+
+.review__link {
+  display: flex;
+  flex-direction: column;
+
+  text-decoration: none;
+  outline: none;
+}
+
+.review__img-wrapper {
+  display: flex;
+
+  margin-bottom: 15px;
+}
+
+.review__item {
+  margin-bottom: 30px;
+}
+
+.review__item h3 {
+  font-family: "Playfair";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 23px;
+  line-height: 31px;
+  color: $color-black;
+
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.review__item p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 21px;
+  color: $color-black;
+
+  margin: 0;
+}

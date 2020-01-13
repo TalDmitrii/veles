@@ -1,0 +1,30 @@
+.link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 170px;
+
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $color-white;
+
+  padding: 15px 29px;
+
+  border: 2px solid $color-main;
+  background-color: $color-black-70;
+  outline: none;
+}
+
+.link span {
+  margin-right: 6px;
+}
+
+.link svg {
+  fill: $color-white;
+}

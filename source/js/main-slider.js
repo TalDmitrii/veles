@@ -5,13 +5,16 @@
   var tabletWidth = 768;
 
   var swiper = new Swiper('.new-features__slider', {
-    // autoHeight: true,
+    autoHeight: true,
     slidesPerView: 1,
     loop: true,
     // spaceBetween: 0,
     updateOnWindowResize: true,
     grabCursor: true,
-    
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',

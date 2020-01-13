@@ -5,7 +5,7 @@
   var tabletWidth = 768;
 
   var swiper = new Swiper('.favorites__slider', {
-    // autoHeight: true,
+    autoHeight: true,
     slidesPerView: 1,
     loop: true,
     // spaceBetween: 0,

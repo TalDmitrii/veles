@@ -1,0 +1,123 @@
+.new-features {
+  margin-bottom: 57px;
+}
+
+.new-features__slider {
+  // padding-bottom: 40px;
+}
+
+.new-features__list {
+  @include indents-zero();
+}
+
+.new-features__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 372px;
+
+  background-color: $color-black-70;
+}
+
+.new-features__item--promo {
+  &::before {
+    content: "Новое";
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: $color-white;
+
+    padding: 5px 15px 3px;
+
+    background-color: $color-main;
+  }
+}
+
+.new-features__img-wrapper {
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.new-features__img-wrapper img {
+  object-fit: cover;
+}
+
+.new-features__description {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $color-white;
+
+  padding-top: 70px;
+}
+
+.new-features__description h3 {
+  max-width: 95%;
+
+  font-style: normal;
+  font-weight: 300;
+  font-size: 30px;
+  line-height: 45px;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  word-break: break-word;
+
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.new-features__description p {
+  max-width: 90%;
+
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+
+  margin: 0;
+  padding-bottom: 50px;
+}
+
+.new-features__button {
+  display: none;
+}
+
+.new-features__slider .swiper-pagination {
+  bottom: 15px;
+}
+
+.new-features__slider .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+
+  font-size: 0;
+  line-height: 0;
+
+  background-color: rgba($color-white, 40%);
+  
+  outline: none;
+}
+
+.new-features__slider.swiper-container-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0 8px;
+}
