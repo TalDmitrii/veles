@@ -3,6 +3,7 @@
   align-items: center;
   justify-content: center;
   max-width: 170px;
+  transition: background-color 0.3s, border-color 0.3s;
 
   font-family: "Raleway";
   font-style: normal;
@@ -14,11 +15,17 @@
   text-decoration: none;
   color: $color-white;
 
-  padding: 15px 29px;
+  padding: 15px 29px 13px;
 
   border: 2px solid $color-main;
   background-color: $color-black-70;
   outline: none;
+
+  &:hover,
+  &:focus {
+    background-color: $color-main;
+    border-color: $color-main;
+  }
 }
 
 .link span {
@@ -26,5 +33,13 @@
 }
 
 .link svg {
+  transform: translateX(0);
+  transition: transform 0.3s;
+  margin-top: -1px;
   fill: $color-white;
+}
+
+.link:hover svg,
+.link:focus svg {
+  transform: translateX(15px);
 }

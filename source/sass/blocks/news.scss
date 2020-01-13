@@ -1,6 +1,13 @@
 .news {
+  max-width: 100%;
   margin-bottom: 45px;
   padding: 0 16px;
+
+  @media (min-width: $laptop-width)  {
+    padding-right: 0;
+    padding-left: 32px;
+    margin-bottom: 15px;
+  }
 }
 
 .news__header {
@@ -13,8 +20,21 @@
   margin-bottom: 15px;
 }
 
+.news__container {
+  max-width: 100%;
+
+  @media (min-width: $tablet-width)  {
+    display: flex;
+  }
+}
+
 .news__list {
   @include indents-zero();
+
+  @media (min-width: $laptop-width)  {
+    width: 35%;
+    flex-grow: 1;
+  }
 }
 
 .news__link {
@@ -30,10 +50,41 @@
 
 .news__item .news__img-wrapper {
   display: flex;
+  position: relative;
   width: 44.1%;
   flex-shrink: 0;
 
   margin-right: 15px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: opacity 0.3s;
+
+    opacity: 0;
+
+    background-color: rgba(7, 6, 17, 0.7);
+    background-image: url("../img/bookmark.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: top 10px right 10px;
+  }
+
+  @media (min-width: $desktop-width)  {
+    margin-right: 12px;
+  }
+}
+
+.news__link:hover .news__img-wrapper,
+.news__link:focus .news__img-wrapper {
+  &::before {
+    opacity: 1;
+  }
 }
 
 .news__item img {
@@ -43,6 +94,7 @@
 
 .news__item h3 {
   max-width: 95%;
+  transition: color 0.3s;
 
   font-family: "Playfair";
   font-style: normal;
@@ -52,6 +104,11 @@
 
   margin-top: 0;
   margin-bottom: 10px;
+}
+
+.news__item .news__link:hover h3,
+.news__item .news__link:focus h3 {
+  color: $color-main;
 }
 
 .news__item p {
@@ -66,6 +123,24 @@
 
 .news__major-news {
   margin-bottom: 25px;
+
+  @media (min-width: $tablet-width)  {
+    width: 61%;
+    flex-shrink: 0;
+
+    margin-right: 30px;
+    margin-bottom: 31px;
+  }
+
+  @media (min-width: $laptop-width)  {
+    width: 48%;
+  }
+
+  @media (min-width: $desktop-width)  {
+    width: 59%;
+
+    margin-right: 25px;
+  }
 }
 
 .news__major-news .news__link {
@@ -76,6 +151,36 @@
   justify-content: flex-end;
 
   padding: 20px 15px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    transition: opacity 0.3s;
+
+    opacity: 0;
+
+    background-color: rgba(7, 6, 17, 0.7);
+    background-image: url("../img/bookmark.png");
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: top 10px right 10px;
+  }
+
+  @media (min-width: $tablet-width)  {
+    min-height: 100%;
+  }
+}
+
+.news__major-news .news__link:hover,
+.news__major-news .news__link:focus {
+  &::before {
+    opacity: 1;
+  }
 }
 
 .news__major-news .news__img-wrapper {
@@ -88,6 +193,11 @@
   z-index: 1;
 }
 
+.news__major-news picture {
+  display: flex;
+  width: 100%;
+}
+
 .news__major-news img {
   object-fit: cover;
   width: 100%;
@@ -96,6 +206,8 @@
 .news__major-news .news__description {
   position: relative;
   z-index: 2;
+
+  margin-top: auto;
 }
 
 .news__major-news h3 {

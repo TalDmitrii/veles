@@ -1,0 +1,50 @@
+.page-footer {
+  display: none;
+  width: 100%;
+
+  background-color: #f7f7f7;
+
+  @media (min-width: $laptop-width)  {
+    display: block;
+  }
+}
+
+.page-footer__content {
+  max-width: $content-max-width;
+
+  margin: 0 auto;
+  padding-top: 25px;
+  padding-bottom: 15px;
+}
+
+.page-footer__header {
+  max-width: 80%;
+
+  font-family: "Playfair";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 37px;
+  letter-spacing: 1px;
+  color: $color-black;
+  text-align: center;
+
+  margin: 0 auto 20px;
+}
+
+.page-footer__private-policy {
+  max-width: 95%;
+
+  font-size: 12px;
+  line-height: 15px;
+  text-align: end;
+  color: $color-black;
+
+  margin: 0 auto;
+
+  opacity: 0.5;
+
+  @media (min-width: $laptop-width)  {
+    max-width: 100%;
+  }
+}

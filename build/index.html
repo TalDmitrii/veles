@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="Description" content="">
+  <meta name="Description" content="Все новости культуры в одном месте">
   <link rel="preload" href="fonts/playfair-bold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
   <link href="css/style.min.css" rel="stylesheet">
   <title>Главная</title>
@@ -13,8 +13,6 @@
 <body class="no-js">
 
   <header class="page-header">
-    <!-- <button class="menu-toggle" type="button">Переключить меню</button> -->
-
     <button class="menu-toggle" type="button" aria-label="Переключить меню">
       <span class="menu-toggle__burger"></span>
     </button>
@@ -122,8 +120,12 @@
         <ul class="new-features__list swiper-wrapper">
           <li class="new-features__item new-features__item--promo swiper-slide">
             <div class="new-features__img-wrapper">
-              <!-- width = 320px, height = 372px -->
-              <img src="img/main.jpg" srcset="img/main.jpg 1x, img/main@2x.jpg 2x" width="320" height="372" alt="Изображение">
+              <!-- mobile: width = 320px, height = 372px
+                   desktop: width = 1440px, height = 464px -->
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/main-desktop.jpg 1x, img/main-desktop@2x.jpg 2x">
+                <img src="img/main.jpg" srcset="img/main.jpg 1x, img/main@2x.jpg 2x" width="320" height="372" alt="Изображение">
+              </picture>
             </div>
             <div class="new-features__description">
               <h3>Подводный отель</h3>
@@ -132,41 +134,57 @@
           </li>
           <li class="new-features__item swiper-slide">
             <div class="new-features__img-wrapper">
-              <!-- width = 320px, height = 372px -->
-              <img src="img/main.jpg" srcset="img/main.jpg 1x, img/main@2x.jpg 2x" width="320" height="372" alt="Изображение">
+              <!-- mobile: width = 320px, height = 372px
+                   desktop: width = 1440px, height = 464px -->
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/main-2-desktop.jpg 1x">
+                <img src="img/main-2.jpg" width="320" height="372" alt="Изображение">
+              </picture>
             </div>
             <div class="new-features__description">
-              <h3>Подводный мотель</h3>
-              <p>Как известно, Дубай – город контрастов. Самые революционные и фантастические мечты архитекторов способен воплотить в жизнь этот мегаполис, построенный на нефти и за счет нефти</p>
+              <h3>Надводный мотель</h3>
+              <p>Самые революционные и фантастические мечты архитекторов способен воплотить в жизнь этот мегаполис, построенный на нефти и за счет нефти</p>
             </div>
           </li>
           <li class="new-features__item new-features__item--promo swiper-slide">
             <div class="new-features__img-wrapper">
-              <!-- width = 320px, height = 372px -->
-              <img src="img/main.jpg" srcset="img/main.jpg 1x, img/main@2x.jpg 2x" width="320" height="372" alt="Изображение">
+              <!-- mobile: width = 320px, height = 372px
+                   desktop: width = 1440px, height = 464px -->
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/main-desktop.jpg 1x, img/main-desktop@2x.jpg 2x">
+                <img src="img/main.jpg" srcset="img/main.jpg 1x, img/main@2x.jpg 2x" width="320" height="372" alt="Изображение">
+              </picture>
             </div>
             <div class="new-features__description">
-              <h3>Подводный хотель</h3>
-              <p>Как известно, Дубай – город контрастов. Самые революционные и фантастические мечты архитекторов способен воплотить в жизнь этот мегаполис, построенный на нефти и за счет нефти</p>
+              <h3>Добавку хотель</h3>
+              <p>Как известно, Дубай – город контрастов. Самые революционные и фантастические мечты архитекторов способен воплотить в жизнь этот мегаполис</p>
             </div>
           </li>
           <li class="new-features__item swiper-slide">
             <div class="new-features__img-wrapper">
-              <!-- width = 320px, height = 372px -->
-              <img src="img/main.jpg" srcset="img/main.jpg 1x, img/main@2x.jpg 2x" width="320" height="372" alt="Изображение">
+              <!-- mobile: width = 320px, height = 372px
+                   desktop: width = 1440px, height = 464px -->
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/main-2-desktop.jpg 1x">
+                <img src="img/main-2.jpg" width="320" height="372" alt="Изображение">
+              </picture>
             </div>
             <div class="new-features__description">
-              <h3>Подводный постель</h3>
-              <p>Как известно, Дубай – город контрастов. Самые революционные и фантастические мечты архитекторов способен воплотить в жизнь этот мегаполис, построенный на нефти и за счет нефти</p>
+              <h3>Мягкий постель</h3>
+              <p>Как известно, Дубай – город контрастов.</p>
             </div>
           </li>
           <li class="new-features__item swiper-slide">
             <div class="new-features__img-wrapper">
-              <!-- width = 320px, height = 372px -->
-              <img src="img/main.jpg" srcset="img/main.jpg 1x, img/main@2x.jpg 2x" width="320" height="372" alt="Изображение">
+              <!-- mobile: width = 320px, height = 372px
+                   desktop: width = 1440px, height = 464px -->
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/main-desktop.jpg 1x, img/main-desktop@2x.jpg 2x">
+                <img src="img/main.jpg" srcset="img/main.jpg 1x, img/main@2x.jpg 2x" width="320" height="372" alt="Изображение">
+              </picture>
             </div>
             <div class="new-features__description">
-              <h3>Подводный метель</h3>
+              <h3>Холодный метель</h3>
               <p>Как известно, Дубай – город контрастов. Самые революционные и фантастические мечты архитекторов способен воплотить в жизнь этот мегаполис, построенный на нефти и за счет нефти</p>
             </div>
           </li>
@@ -175,8 +193,16 @@
         <!-- Add Pagination -->
         <div class="swiper-pagination swiper-pagination-white"></div>
         <!-- Add Arrows -->
-        <button type="button" class="new-features__button swiper-button-next swiper-button-white"></button>
-        <button type="button" class="new-features__button swiper-button-prev swiper-button-white"></button>
+        <button type="button" class="new-features__button new-features__button--prev swiper-button-prev swiper-button-white">
+          <svg width="35" height="50">
+            <use xlink:href="img/sprite.svg#rectangle"></use>
+          </svg>
+        </button>
+        <button type="button" class="new-features__button new-features__button--next swiper-button-next swiper-button-white">
+          <svg width="35" height="50">
+            <use xlink:href="img/sprite.svg#rectangle"></use>
+          </svg>
+        </button>
       </div>
     </section>
 
@@ -186,11 +212,15 @@
         <section class="news" id="news">
           <h2 class="news__header">НОВОСТИ</h2>
 
-          <div class="news__news-block">
+          <div class="news__container">
             <div class="news__major-news">
               <a class="news__link" href="#" aria-label="Новости">
                 <div class="news__img-wrapper">
-                  <img src="img/news-1.jpg" srcset="img/news-1.jpg 1x, img/news-1@2x.jpg 2x" width="288" height="334" alt="Изображение">
+                  <!-- width = 288px, height = 334px -->
+                  <picture>
+                    <source media="(min-width: 768px)" srcset="img/news-1-desktop.jpg 1x, img/news-1-desktop@2x.jpg 2x">
+                    <img src="img/news-1.jpg" srcset="img/news-1.jpg 1x, img/news-1@2x.jpg 2x" width="288" height="334" alt="Изображение">
+                  </picture>
                 </div>
                 <div class="news__description">
                   <h3>Новости культуры России и всего мира</h3>
@@ -244,7 +274,11 @@
             <li class="review__item">
               <a href="#" class="review__link" aria-label="Обзор">
                 <div class="review__img-wrapper">
-                  <img src="img/review-1.jpg" srcset="img/review-1.jpg 1x, img/review-1@2x.jpg 2x" width="288" height="203" alt="Изображение">
+                  <!-- width = 288px, height = 203px -->
+                  <picture>
+                    <source media="(min-width: 1024px)" srcset="img/review-1-desktop.jpg 1x, img/review-1-desktop@2x.jpg 2x">
+                    <img src="img/review-1.jpg" srcset="img/review-1.jpg 1x, img/review-1@2x.jpg 2x" width="288" height="203" alt="Изображение">
+                  </picture>
                 </div>
                 <h3>«Шальные годы» Монпарнаса</h3>
                 <p>В Музее изобразительных искусств имени Пушкина с 29 сентября по 29 ноября проходит выставка «Шальные годы Монпарнаса»</p>
@@ -253,7 +287,11 @@
             <li class="review__item">
               <a href="#" class="review__link" aria-label="Обзор">
                 <div class="review__img-wrapper">
-                  <img src="img/review-2.jpg" srcset="img/review-2.jpg 1x, img/review-2@2x.jpg 2x" width="288" height="203" alt="Изображение">
+                  <!-- width = 288px, height = 203px -->
+                  <picture>
+                    <source media="(min-width: 1024px)" srcset="img/review-2-desktop.jpg 1x, img/review-2-desktop@2x.jpg 2x">
+                    <img src="img/review-2.jpg" srcset="img/review-2.jpg 1x, img/review-2@2x.jpg 2x" width="288" height="203" alt="Изображение">
+                  </picture>
                 </div>
                 <h3>Анатомия за 30 секунд</h3>
                 <p>Сейчас, когда мир открыт нараспашку для человека и его познавательных изысканий, интерес к научно-популярной литературе заметно вырос</p>
@@ -262,7 +300,11 @@
             <li class="review__item">
               <a href="#" class="review__link" aria-label="Обзор">
                 <div class="review__img-wrapper">
-                  <img src="img/review-3.jpg" srcset="img/review-3.jpg 1x, img/review-3@2x.jpg 2x" width="288" height="203" alt="Изображение">
+                  <!-- width = 288px, height = 203px -->
+                  <picture>
+                    <source media="(min-width: 1024px)" srcset="img/review-3-desktop.jpg 1x, img/review-3-desktop@2x.jpg 2x">
+                    <img src="img/review-3.jpg" srcset="img/review-3.jpg 1x, img/review-3@2x.jpg 2x" width="288" height="203" alt="Изображение">
+                  </picture>
                 </div>
                 <h3>Русские балетные сезоны </h3>
                 <p>В Новом Иерусалиме стартовал необычный культурно-развлекательный спектакль, который покажут в новом театре</p>
@@ -271,7 +313,11 @@
             <li class="review__item">
               <a href="#" class="review__link" aria-label="Обзор">
                 <div class="review__img-wrapper">
-                  <img src="img/review-4.jpg" srcset="img/review-4.jpg 1x, img/review-4@2x.jpg 2x" width="288" height="203" alt="Изображение">
+                  <!-- width = 288px, height = 203px -->
+                  <picture>
+                    <source media="(min-width: 1024px)" srcset="img/review-4-desktop.jpg 1x, img/review-4-desktop@2x.jpg 2x">
+                    <img src="img/review-4.jpg" srcset="img/review-4.jpg 1x, img/review-4@2x.jpg 2x" width="288" height="203" alt="Изображение">
+                  </picture>
                 </div>
                 <h3>Сферические чудаки</h3>
                 <p>Корреспондентам «Культурного обозревателя» посчастливилось побывать в театре «Сфера» на премьере спектакля «Чудаки и зануды» </p>
@@ -283,7 +329,11 @@
         <section class="banner">
           <h2 class="visually-hidden">Баннер</h2>
           <div class="banner__img-wrapper">
-            <img src="img/banner.jpg" srcset="img/banner.jpg 1x, img/banner@2x.jpg 2x" width="320" height="176" alt="Балет">
+            <!-- width = 320px, height = 176px -->
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/banner-desktop.jpg 1x, img/banner-desktop@2x.jpg 2x">
+              <img src="img/banner.jpg" srcset="img/banner.jpg 1x, img/banner@2x.jpg 2x" width="320" height="176" alt="Балет">
+            </picture>
           </div>
           <div class="banner__content">
             <h3>Ох, уж этот балет</h3>
@@ -296,67 +346,67 @@
           </div>
 
         </section>
-
-        <section class="favorites">
-          <h2 class="visually-hidden">Избранное</h2>
-
-          <div class="favorites__slider swiper-container">
-            <ul class="favorites__list swiper-wrapper">
-              <li class="favorites__item swiper-slide">
-                <div class="favorites__img-wrapper">
-                  <img src="img/slider-1-desktop.jpg" srcset="img/slider-1-desktop.jpg 1x, img/slider-1-desktop@2x.jpg 2x" width="288" height="146" alt="Изображение">
-                </div>
-                <div class="favorites__content">
-                  <h3>КАК все успевать</h3>
-                  <a class="link favorites__link" href="#">Смотреть</a>
-                </div>
-              </li>
-              <li class="favorites__item swiper-slide">
-                <div class="favorites__img-wrapper">
-                  <img src="img/slider-2-desktop.jpg" srcset="img/slider-2-desktop.jpg 1x, img/slider-2-desktop@2x.jpg 2x" width="288" height="146" alt="Изображение">
-                </div>
-                <div class="favorites__content">
-                  <h3>Великолепное путешествие</h3>
-                  <a class="link favorites__link" href="#">Смотреть</a>
-                </div>
-              </li>
-              <li class="favorites__item swiper-slide">
-                <div class="favorites__img-wrapper">
-                  <img src="img/slider-3-desktop.jpg" srcset="img/slider-3-desktop.jpg 1x, img/slider-3-desktop@2x.jpg 2x" width="288" height="146" alt="Изображение">
-                </div>
-                <div class="favorites__content">
-                  <h3>Что это?</h3>
-                  <a class="link favorites__link" href="#">Смотреть</a>
-                </div>
-              </li>
-              <li class="favorites__item favorites__item--light swiper-slide">
-                <div class="favorites__img-wrapper">
-                  <img src="img/slider-4-desktop.jpg" srcset="img/slider-4-desktop.jpg 1x, img/slider-4-desktop@2x.jpg 2x" width="288" height="146" alt="Изображение">
-                </div>
-                <div class="favorites__content">
-                  <h3>Опасное искусство</h3>
-                  <a class="link favorites__link" href="#">Смотреть</a>
-                </div>
-              </li>
-              <li class="favorites__item swiper-slide">
-                <div class="favorites__img-wrapper">
-                  <img src="img/slider-3-desktop.jpg" srcset="img/slider-3-desktop.jpg 1x, img/slider-3-desktop@2x.jpg 2x" width="288" height="146" alt="Изображение">
-                </div>
-                <div class="favorites__content">
-                  <h3>Что это?</h3>
-                  <a class="link favorites__link" href="#">Смотреть</a>
-                </div>
-              </li>
-            </ul>
-
-            <!-- Add Pagination -->
-            <div class="swiper-pagination swiper-pagination-white"></div>
-            <!-- Add Arrows -->
-            <button type="button" class="swiper-button-next swiper-button-white"></button>
-            <button type="button" class="swiper-button-prev swiper-button-white"></button>
-          </div>
-        </section>
       </div>
+
+      <section class="favorites">
+        <h2 class="visually-hidden">Избранное</h2>
+
+        <div class="favorites__slider swiper-container">
+          <ul class="favorites__list swiper-wrapper">
+            <li class="favorites__item swiper-slide">
+              <div class="favorites__img-wrapper">
+                <img src="img/slider-1-desktop.jpg" srcset="img/slider-1-desktop.jpg 1x, img/slider-1-desktop@2x.jpg 2x" width="288" height="146" alt="Изображение">
+              </div>
+              <div class="favorites__content">
+                <h3>КАК все успевать</h3>
+                <a class="link favorites__link" href="#">Смотреть</a>
+              </div>
+            </li>
+            <li class="favorites__item swiper-slide">
+              <div class="favorites__img-wrapper">
+                <img src="img/slider-2-desktop.jpg" srcset="img/slider-2-desktop.jpg 1x, img/slider-2-desktop@2x.jpg 2x" width="288" height="146" alt="Изображение">
+              </div>
+              <div class="favorites__content">
+                <h3>Великолепное путешествие</h3>
+                <a class="link favorites__link" href="#">Смотреть</a>
+              </div>
+            </li>
+            <li class="favorites__item swiper-slide">
+              <div class="favorites__img-wrapper">
+                <img src="img/slider-3-desktop.jpg" srcset="img/slider-3-desktop.jpg 1x, img/slider-3-desktop@2x.jpg 2x" width="288" height="146" alt="Изображение">
+              </div>
+              <div class="favorites__content">
+                <h3>Что это?</h3>
+                <a class="link favorites__link" href="#">Смотреть</a>
+              </div>
+            </li>
+            <li class="favorites__item favorites__item--light swiper-slide">
+              <div class="favorites__img-wrapper">
+                <img src="img/slider-4-desktop.jpg" srcset="img/slider-4-desktop.jpg 1x, img/slider-4-desktop@2x.jpg 2x" width="288" height="146" alt="Изображение">
+              </div>
+              <div class="favorites__content">
+                <h3>Опасное искусство</h3>
+                <a class="link favorites__link" href="#">Смотреть</a>
+              </div>
+            </li>
+            <li class="favorites__item swiper-slide">
+              <div class="favorites__img-wrapper">
+                <img src="img/slider-3-desktop.jpg" srcset="img/slider-3-desktop.jpg 1x, img/slider-3-desktop@2x.jpg 2x" width="288" height="146" alt="Изображение">
+              </div>
+              <div class="favorites__content">
+                <h3>Что это?</h3>
+                <a class="link favorites__link" href="#">Смотреть</a>
+              </div>
+            </li>
+          </ul>
+
+          <!-- Add Pagination -->
+          <div class="swiper-pagination swiper-pagination-white"></div>
+          <!-- Add Arrows -->
+          <button type="button" class="swiper-button-next swiper-button-white"></button>
+          <button type="button" class="swiper-button-prev swiper-button-white"></button>
+        </div>
+      </section>
 
       <div class="page-main__side-column">
         <section class="interesting">
@@ -412,10 +462,26 @@
 
   </main>
 
-    <!-- <picture>
-      <source type="image/webp" srcset="img/webp/main-news-item-1.webp, img/webp/main-news-item-1@2x.webp 2x">
-      <img src="img/main-news-item-1.jpg" srcset="img/main-news-item-1@2x.jpg 2x" alt="Фото в новости" width=440 height=320>
-    </picture> -->
+  <footer class="page-footer">
+    <div class="page-footer__content">
+      <h2 class="page-footer__header">Новости культуры</h2>
+      <ul class="page-footer__navigation footer-navigation">
+        <li class="footer-navigation__item"><a href="#news">НОВОСТИ</a></li>
+        <li class="footer-navigation__item"><a href="#reviews">ОБЗОРЫ</a></li>
+        <li class="footer-navigation__item"><a href="#">МУЗЫКА</a></li>
+        <li class="footer-navigation__item"><a href="#">АРХИТЕКТУРА</a></li>
+        <li class="footer-navigation__item"><a href="#">КИНО</a></li>
+        <li class="footer-navigation__item"><a href="#">ТЕАТР</a></li>
+        <li class="footer-navigation__item"><a href="#">ЛИТЕРАТУРА</a></li>
+        <li class="footer-navigation__item"><a href="#">РЕЛИГИЯ</a></li>
+        <li class="footer-navigation__item"><a href="#">ЖИВОПИСЬ</a></li>
+      </ul>
+
+      <p class="page-footer__private-policy">
+        © 2018 Новости культуры. Все права защищены.
+      </p>
+    </div>
+  </footer>
 
   <script src="js/plugins/script.min.js"></script>
   <script src="js/script.min.js"></script>

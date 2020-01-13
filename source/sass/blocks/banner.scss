@@ -9,6 +9,23 @@
   background-color: $color-black-70;
 
   margin-bottom: 50px;
+
+  @media (min-width: $tablet-width) {
+    height: auto;
+    min-height: 176px;
+  }
+
+  @media (min-width: $laptop-width)  {
+    width: auto;
+    max-width: 100%;
+
+    margin-left: 32px;
+  }
+
+  @media (min-width: $desktop-width)  {
+    margin-top: auto;
+    margin-bottom: 30px;
+  }
 }
 
 .banner__img-wrapper {
@@ -23,6 +40,11 @@
 
 .banner__img-wrapper img {
   object-fit: cover;
+  width: 100%;
+}
+
+.banner__img-wrapper picture {
+  display: flex;
   width: 100%;
 }
 

@@ -1,3 +1,11 @@
+.page-header {
+  @media (min-width: $laptop-width) {
+    max-width: $content-max-width;
+
+    margin: 0 auto;
+  }
+}
+
 .page-header__header {
   max-width: 180px;
 
@@ -10,4 +18,11 @@
   letter-spacing: 1px;
 
   margin: 42px auto 20px;
+
+  @media (min-width: $laptop-width) {
+    max-width: 70%;
+
+    font-size: 35px;
+    line-height: 47px;
+  }
 }

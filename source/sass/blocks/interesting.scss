@@ -1,15 +1,38 @@
 .interesting {
   padding: 0 16px;
+
+  @media (min-width: $laptop-width)  {
+    padding-left: 0;
+    padding-right: 32px;
+  }
 }
 
 .interesting__list {
   @include indents-zero();
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $laptop-width) {
+    flex-direction: column;
+  }
 }
 
 .interesting__item {
   position: relative;
 
   margin-bottom: 30px;
+
+  @media (min-width: $tablet-width) {
+    width: 32%;
+  }
+
+  @media (min-width: $laptop-width) {
+    width: 100%;
+  }
 }
 
 .interesting__img-wrapper {
@@ -37,6 +60,14 @@
   align-items: center;
 
   padding: 40px 20px;
+
+  @media (min-width: $laptop-width) {
+    min-height: 400px;
+  }
+
+  @media (min-width: $desktop-width)  {
+    min-height: 479px;
+  }
 }
 
 .interesting__content h3 {
@@ -58,4 +89,8 @@
 
 .interesting__item--dark .interesting__content h3 {
   color: $color-white;
+}
+
+.interesting__content .link {
+  margin-top: auto;
 }

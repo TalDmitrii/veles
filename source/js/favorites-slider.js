@@ -1,14 +1,33 @@
 'use strict';
 
 (function () {
-  var windowSize = document.body.clientWidth;
+  var windowSize;
+  var desktopWidth = 1024;
   var tabletWidth = 768;
+  var slidesPerView;
 
-  var swiper = new Swiper('.favorites__slider', {
+  setSliderSettings();
+
+  function setSliderSettings() {
+    windowSize = document.body.clientWidth;
+
+    if (windowSize < tabletWidth) {
+      slidesPerView = 1;
+      
+    } else if ((windowSize >= tabletWidth) && (windowSize < desktopWidth)) {
+      slidesPerView = 2;
+
+    } else if (windowSize >= desktopWidth) {
+      slidesPerView = 4;
+    }
+  }
+
+  var mySwiper = new Swiper('.favorites__slider', {
     autoHeight: true,
-    slidesPerView: 1,
+    slidesPerView: slidesPerView,
+    spaceBetween: 30,
     loop: true,
-    // spaceBetween: 0,
+
     updateOnWindowResize: true,
 
     pagination: {
@@ -23,9 +42,11 @@
 
   
   function changeSliderSettings() {
-    windowSize = document.body.clientWidth;
+    setSliderSettings();
 
-    swiper.update();
+    mySwiper.params.slidesPerView = slidesPerView;
+
+    mySwiper.update();
   };
 
   window.addEventListener('resize', changeSliderSettings);

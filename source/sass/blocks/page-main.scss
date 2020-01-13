@@ -1,0 +1,31 @@
+.page-main__container {
+  @media (min-width: $laptop-width)  {
+    display: flex;
+    flex-wrap: wrap;
+    width: 94vw;
+    max-width: 1234px;
+
+    margin: 0 auto;
+  }
+}
+
+.page-main__main-column {
+  @media (min-width: $laptop-width)  {
+    display: flex;
+    flex-direction: column;
+    width: 65.81%;
+    flex-shrink: 0;
+  }
+}
+
+.page-main__side-column {
+  @media (min-width: $laptop-width)  {
+    width: 30%;
+
+    margin-left: auto;
+  }
+
+  @media (min-width: $desktop-width)  {
+    width: 32.5%;
+  }
+}

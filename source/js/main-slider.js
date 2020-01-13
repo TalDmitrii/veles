@@ -8,9 +8,8 @@
     autoHeight: true,
     slidesPerView: 1,
     loop: true,
-    // spaceBetween: 0,
+    effect: 'fade',
     updateOnWindowResize: true,
-    grabCursor: true,
     pagination: {
       el: '.swiper-pagination',
       clickable: true,
